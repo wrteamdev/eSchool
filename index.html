@@ -57,13 +57,27 @@
                                     <li><a href='#setupFlutter'>Setup flutter</a></li>
                                     <li><a href='#changePackageName'>Change package name of application</a></li>
                                     <li><a href='#integrateWithFirebase'>Integrate with firebase</a></li>
+                                    <li><a href='#integrateWithAdminPanel'>Integrate with admin panel</a></li>
+                                    <li><a href='#changeAppLogo'>Change app logo</a></li>
+                                    <li><a href='#changeAppName'>Change app name</a></li>
+                                    <li><a href='#runThisApp'>Run this app</a></li>
+                                    <li><a href='#changeAppTheme'>Change app theme</a></li>
+                                    <li><a href='#changeFont'>Change font</a></li>
+                                    <li><a href='#changeLanguage'>Change language</a></li>
+                                    
+                                    <li><a href='#generateReleaseVersion'>Generate release version</a></li>
+                                    
 
-                                    
-                                    
                                 </ul>
                             </li>
                             <li>
-                                <a href="#guide">Guide <span class="fa fa-arrow-right"></span></a>
+                                <a href="#support">Support <span class="fa fa-arrow-right"></span></a>
+                            </li>
+                            <li>
+                                <a href="#rating">Rating <span class="fa fa-arrow-right"></span></a>
+                            </li>
+                            <li>
+                                <a href="#contactUs">Contact Us <span class="fa fa-arrow-right"></span></a>
                             </li>
                             
                         </ul>
@@ -257,12 +271,9 @@
                         <span class="icon fa fa-at"></span>
                         <h2>Integrate with firebase</h2>
                     </div>
-
                     <ol>
                         <li>
                             <h4>
-
-
                                 Create firebase project in your account
                             </h4>
                             <br>
@@ -312,6 +323,185 @@
                     </div>
                 </section>
 
+                
+                <!-- Change package name of this app flutter  -->
+                <section class="section css-structure" id="integrateWithAdminPanel">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Integrate with admin panel</h2>
+                    </div>
+
+
+                    
+                    <div class="sec-content">
+                            <h4>
+                                Go to lib/utils/constants.dart and replace the database url with your admin panel url.
+                            </h4>  
+                            <img src="images/app/changeDatabaseUrl.png" alt="e-School" /><br>
+                    <br />
+                    </div>
+                </section>
+
+                
+                <section class="section css-structure" id="changeAppLogo">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Change app logo</h2>
+                    </div>
+                    
+                    <div class="sec-content">
+                        
+                        <h4> For Android, open android > app > src > main > res and add here your logo according to device screen size       </h4>         
+                            
+                        <img src="images/app/androidAppIcon.png" alt="e-School" />  
+                       
+                       <h4> For IOS  open ios > Runner > Assets.xcassets > AppIcon.appiconset here and add your logo according to diffrent size.</h4>
+                            <img src="images/app/iosAppIcon.png" alt="e-School" />
+                       
+                    <br />
+                    </div>
+                </section>
+
+                <section class="section css-structure" id="changeAppName">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Change app name</h2>
+                    </div>
+                    
+                    <div class="sec-content">
+                        
+                        <h4> For Android, go to android/app/src/main/AndroidManifest.xml and change the app name as shown in image. Replace the selected eschool text with your school name</h4>         
+                            
+                        <img src="images/app/androidAppName.png" alt="e-School" />  
+                       
+                       <br>
+                        <h4> For IOS open this project in xcode and enter your app name in display name field as shown in image.</h4>
+                            <img src="images/app/iosAppName.png" alt="e-School" />
+                    <br>
+                    </div>
+                </section>
+
+                
+                <section class="section css-structure" id="runThisApp">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Run this app</h2>
+                    </div>
+                    
+                    <div class="sec-content">
+                        
+                        <h4>Now we have setiup all the necessary things it's time to run this app.</h4>
+                        <br>         
+                        <h4>Open your terminal, navigate to your project path and execute the following command to run this app</h4>
+                        <br> 
+                        <p class="command-style">flutter run</p>
+                    <br />
+                    </div>
+                </section>
+
+                
+                <section class="section css-structure" id="changeAppTheme">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Change app theme</h2>
+                    </div>
+                    
+                    <div class="sec-content">
+                        
+                        <h4>Go to lib/ui/styles/colors.dart and set your theme colors</h4>
+                        <img src="images/app/chaneAppTheme.png" alt="e-School" />
+                        <br>         
+                    </div>
+                </section>
+
+                
+                <section class="section css-structure" id="changeFont">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Change font in app</h2>
+                    </div>
+                    
+                    <div class="sec-content">
+                        
+                        <ol>    
+                            <li>
+                               <h4> Go to lib/app/app.dart and add your font as shown in image.</h4>
+                                <img src="images/app/changeFont.jpg" alt="e-School" />
+                            </li>
+                            <li>
+                                <h4>
+                                    Go to assets/google_fonts/ and add .tff files of fonts.</h4>
+                                <img src="images/app/changeFont2.jpg" alt="e-School" />
+                            </li>  
+                        </ol>       
+                    </div>
+                </section>
+
+                
+                <section class="section css-structure" id="changeLanguage">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Change language in app</h2>
+                    </div>
+                    
+                    <div class="sec-content">
+                        
+                <ol>
+                    <li>
+                        <h4>By default,default applicaiton language is english. If you want to change default language
+                            go to lib/utils/appLanguages.dart and add your respective language's code shown in below image.
+                            Get your language code from here https://developers.google.com/admin-sdk/directory/v1/languages.</h4>
+                        <img src="images/app/changeDefaultLanguage.png" alt="e-School" />
+                    </li> 
+                    <li>
+                        <h4>
+                            If your default language code is not in app language list add language details 
+                            in list as shown in below image. Go to lib/utils/appLanguages.dart</h4>
+                        <img src="images/app/addLanguage.png" alt="e-School" />
+                    </li>
+                    <li>
+                        <h4>
+                            If your default language is not in assets/languages/[language-code].json then create new file
+                            in same folder with [language-code].json. Add all the labels from en.json and 
+                            convert label values in your respective language</h4>
+                        <img src="images/app/addNewLanguage.jpg" alt="e-School" />
+                    </li>
+                    <li>
+                        <h4>
+                            Copy all the labels form en.json file in your [language-code].json file.</h4>
+                        <img src="images/app/addNewLanguage2.jpg" alt="e-School" />
+                    </li>
+                    <li>
+                        <h4>
+                            If you want to add new language then follow the steps 2,3 and 4.</h4>
+                    </li>
+                </ol>
+                    </div>
+                </section>
+
+                
+                
+                <section class="section css-structure" id="generateReleaseVersion">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Change language in app</h2>
+                        <br>
+                    </div>
+                    
+                    <div class="sec-content">
+                        <h4>How to generate release version of this product</h4>
+                        <ol>    
+                            <li>
+                                
+                                <h4>To generate release android app-bundle and publish to playstore follow https://flutter.dev/docs/deployment/android</h4></li>            
+                            <li><h4>To generate release ios apk and publish to appstore follow https://flutter.dev/docs/deployment/ios</h4></li>
+                        </ol>
+                    </div>
+                </section>
+
+                
+
+
 
                 <!--Support-->
                 <section class="section support" id="support">
@@ -322,40 +512,65 @@
 
                     <br />
                     <div class="sec-content">
-                        <h3>
-                            Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you
-                            have any queries, please feel free to contact us at Support Center.
-                        </h3>
-                        <div class="support-image">
-                            <a href="mailto:support@wrteam.in"><img src="images/customer__support.png" alt="" /></a>
-                        </div>
-                        <br />
+                        <h4>Its our pleasure to serve our service and support. please contact our support team.</h4>
+                        <br>
+                        <h4>Head of Customer Support : Priyansh Parmar <a href="https://join.skype.com/invite/E228Z6F4s3gB" target="_blank" style="color:#3c55d1">Skype Name : Priyansh Parmar</a></h4>
+                        <br>
+                        <h4>To help our customers, we constantly be in touch with every customer if they need any assistance regarding our product. 
+                           <br> We offer our customers a support from  <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) – We are a Team located in India – Asia.
+                        Typically we reply our customers for all the questions and queries within 24 hours of time via comments, support forum or emails.</h4>
 
-                        <p>
-                            Email Us at :
-                            <a href="mailto:support@wrteam.in ">Abdur.rohman2003@gmail.com </a>
-                        </p>
                     </div>
                 </section>
 
-                <!--Free Assetes-->
-                <section class="section custom-order" id="custom-order">
+                
+                <!--Rating-->
+                <section class="section support" id="rating">
                     <div class="sec-title">
                         <span class="icon fa fa-support"></span>
-                        <h2>Custom Order</h2>
+                        <h2>Rating</h2>
                     </div>
 
                     <br />
                     <div class="sec-content">
-                        <p>
-                            For any custom order (web ui design, app design, HTML template Development, WordPress Theme Development or WordPress Plugin Development) please contact us
-                        </p>
-                        <br />
-                        <div class="thumb">
-                            <a href="mailto:support@wrteam.in"><img src="images/custom__order.png" alt="" /></a>
-                        </div>
+                        <h4>Your Feedback</h4>
+                        <br>
+                        <h4>
+                            Dear valuable customer,
+                                Thank you very much for choosing our product.
+                                It's our pleasure to serve top-notch service to you.
+                                Please give us your honest feedback that will help us to make a more strong and reliable product by click here <a href="https://codecanyon.net/item/elite-quiz-the-flutter-quiz-app/33570423" style="color:#3c55d1" target="_blank">Rate Us</a>.
+                                Thank you very much.
+                        </h4>
+                            
+                        
+
                     </div>
                 </section>
+
+                
+                <!--Contact Us-->
+                <section class="section support" id="contactUs">
+                    <div class="sec-title">
+                        <span class="icon fa fa-support"></span>
+                        <h2>Contact Us</h2>
+                    </div>
+
+                    <br />
+                    <div class="sec-content">
+                        <h4>Contact Us</h4>
+                        <h4>WRTeam has creative and dedicated group of developers who are mastered in Apps Developments and Web Application Development with a niche in delivering quality solutions to customers across the globe.
+                            Contact us today to find out how we can help you or for freelance work.
+                        <br>
+                        </h4><h4>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
+                            <br>
+                        </h4><h4>Mail Us : support@wrteam.in</h4>
+                        <br>
+                        <h4>Thank you very much.</h4>
+
+                    </div>
+                </section>
+
             </div>
         </div>
         <!--End pagewrapper-->
