@@ -764,7 +764,7 @@
                         <li><a href="#feature-holidays">Holiday List</a></li>
                         <li><a href="#feature-lessons-and-topics">Lesson and Topic</a></li>
                         <li><a href="#feature-assignments">Student Assignment</a></li>
-                        <li><a href="#feature-attendance">Attendance</a></li>
+                        <li><a href="#feature-attendence">Attendance</a></li>
                         <li><a href="#feature-announcements">Announcement</a></li>
                         <li><a href="#feature-online-and-offline-exams">Online and Offline
                                 Exams</a></li>
@@ -917,7 +917,7 @@
                     <br />
                 </div>
             </section>
-            <section class="section css-structure" id="feature-attendance">
+            <section class="section css-structure" id="feature-attendence">
                 <div class="sec-title">
                     <span class="icon fa fa-at"></span>
                     <h2>Attendance</h2>
@@ -925,8 +925,17 @@
 
                 <br />
                 <div class="sec-content">
-                    <h3>TODO ADD Attendance FEATURE EXPLANATION</h3>
-                    <br />
+                    <h3>Add Attendance (Teacher Panel Login)</h3>
+
+                    <p>Class teachers can take attendance for students in a class, either for today or for a specific
+                        date, from this section.</p>
+                    <br>
+                    <h3>View Attendance (Teacher Panel Login)</h3>
+
+                    <p>Teachers can view the attendance of a specific class. They can filter it by present, absent, and
+                        holiday types, as well as by date. Additionally, a download feature is available to export the
+                        attendance data.</p>
+                    <br>
                 </div>
             </section>
             <section class="section css-structure" id="feature-lessons-and-topics">
@@ -937,7 +946,24 @@
 
                 <br />
                 <div class="sec-content">
-                    <h3>TODO ADD Lessons and Topics FEATURE EXPLANATION</h3>
+                    <h3>Create Lesson (Teacher Panel Login)</h3>
+                    <p>Teachers can effectively manage lessons for students in a specific class section and subject.
+                        When creating a lesson, teachers will see their class sections and subjects available for
+                        selection.</p>
+                    <p>They can then provide a name and description for the lesson and even have the option to add
+                        multiple files to complement the lesson. Once created, these lessons will be visible to students
+                        from the respective class section and subject within the application.</p>
+                    <p>Students can easily download and access the files attached to the lesson to enhance their
+                        learning experience.</p>
+                    <br />
+                    <h3>Create Topic (Teacher Panel Login)</h3>
+                    <p>Teachers can manage topics from this section. Each lesson can have multiple topics, and teachers
+                        can create them by selecting the appropriate class section, subject, and the associated lesson.
+                    </p>
+                    <p>When creating a topic, teachers can provide a topic name and description, and optionally select
+                        relevant files to enrich the content.</p>
+                    <p>Students will be able to view these topics within their lessons through the application,
+                        providing a well-organized and structured learning experience.</p>
                     <br />
                 </div>
             </section>
@@ -983,8 +1009,37 @@
                         to exam results on a student-by-student basis, allowing teachers to track and analyze
                         performance.
                     </p>
+                    <br>
+                    <h3>Manage Online Exam (Teacher Panel Login)</h3>
 
-                    <!-- TODO add online exams as well here -->
+                    <p>Teachers can efficiently manage online exams for different classes from this section. They have
+                        the flexibility to select the class section, subject, and fill in the exam title, along with a
+                        secret exam key that students will use to join the exam. The duration, in minutes, can be
+                        specified to allow students to answer the online exam questions within a defined time frame.</p>
+                    <p>Additionally, teachers can set the starting date and ending date for the online exam. Once
+                        created, these exams will be accessible to students during the scheduled period. Furthermore,
+                        the marks will be automatically calculated based on the questions added to the exam,
+                        streamlining the assessment process.</p>
+                    <br>
+                    <h3>Manage Questions (Teacher Panel Login)</h3>
+
+                    <p>In this section, teachers can efficiently manage questions for various classes and subjects. They
+                        have the option to create two types of questions: simple questions and equation-based questions.
+                    </p>
+                    <p>For simple questions, teachers can provide textual questions, along with multiple textual options
+                        and indicate the correct answer. Additionally, they can optionally include images and notes to
+                        enhance the question's context and clarity.</p>
+                    <p>On the other hand, equation-based questions offer an HTML editor and various features to
+                        seamlessly integrate mathematical equations within the question and its options. Once created,
+                        teachers can add these questions to specific exams, associating them with the relevant subjects.
+                    </p>
+                    <br>
+                    <h3>Terms & Conditions (Teacher Panel Login)</h3>
+
+                    <p>Teachers can customize and add their own terms and conditions for exams through the text editor
+                        provided in this section. Students must agree to these terms before attending the exam via the
+                        application.</p>
+                    <br>
                     <br />
                 </div>
             </section>
@@ -996,19 +1051,102 @@
 
                 <br />
                 <div class="sec-content">
-                    <h3>TODO ADD Assignments FEATURE EXPLANATION</h3>
+                    <h3>Create Assignment (Teacher Panel Login)</h3>
+                    <p>Teachers can create assignments for their class sections on a particular subject. When creating
+                        an assignment, teachers must provide a name and submission date for the assignment.</p>
+                    <p>They can also add detailed instructions and files to provide students with additional information
+                        and resources. Moreover, teachers can specify the points that students can earn by submitting
+                        the assignment.</p>
+                    <p>Furthermore, teachers have the option to allow resubmission of rejected assignments. In such
+                        cases, they must specify the extra days allowed for resubmission.</p>
+                    <p>Students from the class section to which the assignment was assigned will see these assignments
+                        in the application. They can upload their files and submit the assignment to the teacher through
+                        the app.</p>
+
+                    <br />
+                    <h3>Assignment Submission</h3>
+                    <p>Admin and Teachers can view the submitted assignments in this section and accept or reject the
+                        submissions.</p>
+                    <p>They also have the ability to provide feedback and assign points to the submitted assignments.
+                    </p>
+                    <p>Students will be able to see the feedback and updated status of their submitted assignments in
+                        the "Submitted Assignment" section of the application.</p>
+
                     <br />
                 </div>
             </section>
             <section class="section css-structure" id="feature-fees-payment">
                 <div class="sec-title">
                     <span class="icon fa fa-at"></span>
-                    <h2>Fees Payment</h2>
+                    <h2>Fee Payment</h2>
                 </div>
 
                 <br />
                 <div class="sec-content">
-                    <h3>TODO ADD Fees Payment FEATURE EXPLANATION</h3>
+                    <h3>Fees Configuration</h3>
+                    <p>To utilize the fees feature with online payment, administrators must complete this form by
+                        providing their payment gateway details such as Razorpay or Stripe. Additionally, they need to
+                        specify the currency code and symbol for the payments.</p>
+
+                    <br />
+
+                    <h3>Session Year</h3>
+                    <p>Parents can pay their students' fees only for the current session year. Each student can be
+                        assigned to a particular class in a session year and a different class in the subsequent session
+                        year. In this section, administrators can create new session years and manage existing ones.</p>
+                    <p>When setting up a session year, administrators need to enter its name, starting date, ending
+                        date, fees due date, and fees due charges (in percentage). Optionally, administrators can enable
+                        installment fee payments and set up one or more installments with names, due dates, and due
+                        charges (in percentage).</p>
+                    <p>These dates and charges will be applicable to students paying their fees in the current session
+                        year. Administrators can designate the current session year from the general settings in the
+                        system configuration.</p>
+
+                    <br />
+
+                    <h3>Fees Type</h3>
+                    <p>Administrators can create various types of fees from this section, such as exam fees, gym fees,
+                        sports fees, and more. Each fee type can have a title and description to provide additional
+                        context.</p>
+
+                    <br />
+
+                    <h3>Assign Fees Classes</h3>
+                    <p>Administrators can assign different types of fees to specific class sections in this section.
+                        These fees can either be optional or non-optional, and their amounts can vary for each class
+                        section.</p>
+                    <p>For instance, sports fees could be $90 for Class 9A and $200 for Class 12B. Administrators can
+                        customize the amounts for individual fee types according to each class.</p>
+
+                    <br />
+
+                    <h3>Fees Paid</h3>
+                    <p>Administrators can view the fee payment status of all students from various classes in this
+                        section. If students and parents are making payments directly to the admin/principal using cash
+                        or cheque, the admin can record those payments in the compulsory/optional fee payment section.
+                    </p>
+                    <p>Furthermore, administrators have the convenience of downloading PDF receipts for fees that have
+                        already been paid.</p>
+
+                    <br />
+
+                    <h3>Fees Transactions Logs</h3>
+                    <p>This section displays logs of all fees transactions. Administrators can access detailed
+                        information about each transaction related to fees.</p>
+
+                    <br />
+
+                    <h3>Fees Online Payment (Parent Login eSchool App)</h3>
+                    <p>Parents can conveniently pay their student's current session year fees online through the
+                        application. In the student options -> fees section, they can access information about all
+                        session years where fees have been paid and download receipts for their records.</p>
+                    <p>Parents have the flexibility to pay pending fees for the current session year. They can either
+                        make full payments for compulsory fees or, if installment options are enabled, pay one or more
+                        installments. Additionally, they can pay optional fees at any time without concerns about due
+                        charges.</p>
+                    <p>In the settings -> fees transaction option, parents can review all fee payment transactions,
+                        including the amount and status of each payment made.</p>
+
                     <br />
                 </div>
             </section>
