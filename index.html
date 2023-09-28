@@ -645,7 +645,55 @@
                 </div>
                 <br>
                 <div class="sec-content">
-                    <h4>How to generate release version of this product</h4>
+                    <h2>Create and add Key Store file for Androd:</h2>
+                    <br><br>
+                    <ol>
+                        <li>
+                            <h4>To generate a keystore file, run the following command:</h4>
+                            <br>
+                            <i>keytool -genkey -v -keystore your-keystore-file.jks -keyalg RSA -keysize 2048 -validity
+                                10000 -alias your-alias</i>
+                            <br><br>
+                            <h4>You can replace "your-keystore-file.jks" with your preferred filename, but ensure you
+                                keep the ".jks" extension. Similarly, you can change "your-alias" as needed, but make
+                                sure to remember it. During this process, you will be prompted to set a password; please
+                                note that the password characters won't be visible on the screen.
+                                <br><br>
+                                Additional information may be requested, but you can simply press Enter to skip those as
+                                they are
+                                optional fields.
+                            </h4>
+                            <br><br>
+                        </li>
+                        <li>
+                            <h4>Create a file named "key.properties" in your project's "android" folder and add the
+                                following details, which correspond to the information you used in the previous step:
+                            </h4>
+                            <br>
+                            <i>storePassword=[your-password-from-previous-step]<br>
+                                keyPassword=[your-password-from-previous-step]<br>
+                                keyAlias=[your-alias-from-previous-step]<br>
+                                storeFile=[your-keystore-file-location]<br>
+                            </i>
+                            <br><br>
+                            <h4>Replace the placeholders ("[]" brackets) with the actual details you used. Once these
+                                two steps are completed, you can generate either an APK file using the following
+                                command:</h4>
+                            <br>
+                            <i>flutter build apk</i>
+                            <br><br>
+                            <h4>Or an app bundle file for the Play Store upload with:</h4>
+                            <br>
+                            <i>flutter build appbundle</i>
+                        </li>
+                    </ol>
+                    <br><br>
+                    <img src="images/app/generatKeyStorefile.png" alt="e-School" />
+                    <br><br>
+                </div>
+                <br><br>
+                <div class="sec-content">
+                    <h2>Follow these links for more information on generateing the release version:</h2>
                     <br><br>
                     <ol>
                         <li>
