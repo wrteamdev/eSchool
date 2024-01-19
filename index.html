@@ -49,10 +49,19 @@
                             <ul>
                                 <li><a href='#prerequisite'>Prerequisite</a></li>
                                 <li><a href='#Installation-steps'>Installation Steps</a></li>
-                                <li><a href='#additional-configurations'>Addtional Configuration</a></li>
                             </ul>
                         </li>
-
+                        <li class="sub-menu"><a>Addtional Panel Configuration<i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#sessionyear'>Session Year</a></li>
+                                <li><a href='#appsettings'>App Settings</a></li>
+                                <li><a href='#generalsettings'>General Settings</a></li>
+                                <li><a href='#fcmserverkey'>FCM Server Key</a></li>
+                                <li><a href='#emailconfig'>Email Configurations</a></li>
+                                <li><a href='#feepayment'>Fee payment Configurations</a></li>
+                                <li><a href='#webhookconfig'>Payment Gateway Webhook Configration</a></li>
+                            </ul>
+                        </li>
                         <li class='sub-menu'><a>Setup Mobile Application<i class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#setupFlutter'>Setup Flutter</a></li>
@@ -202,7 +211,7 @@
                 </div>
             </section>
 
-            <section class="section css-structure" id="additional-configurations">
+            <section class="section css-structure">
                 <div class="sec-title">
                     <span class="icon fa fa-at"></span>
                     <h2>Addtional Configurations (Admin Panel)</h2>
@@ -211,51 +220,59 @@
                 <div class="sec-content">
                     <h3>After Installation you need to setup some settings before using the system.</h3>
 
-                    <h3 class="content-title">1. Session Year</h3>
+                    <h3 class="content-title" id="sessionyear">1. Session Year</h3>
                     <h3>Set your Current & upcoming session years here, So you can manage studens by session year</h3>
                     <img src="images/admin/7.png" alt="e-School">
 
                     <br><br>
 
-                    <h3 class="content-title">2. App Settings</h3>
+                    <h3 class="content-title" id="appsettings">2. App Settings</h3>
                     <h3>This settings will be used by your Flutter APP.</h3>
                     <img src="images/admin/8.png" alt="e-School">
 
                     <br><br>
 
-                    <h3 class="content-title">3. General Settings</h3>
+                    <h3 class="content-title" id="generalsettings">3. General Settings</h3>
                     <h3>This settings will be used by Admin Panel.You can set your current session year here.</h3>
                     <img src="images/admin/9.png" alt="e-School">
 
                     <br><br>
 
-                    <h3 class="content-title">4. FCM Server Key</h3>
+                    <h3 class="content-title" id="fcmserverkey">4. FCM Server Key</h3>
                     <h3>FCM Server key will be used for APP notifications.</h3>
                     <img src="images/admin/10.png" alt="e-School">
 
                     <br><br>
 
-                    <h3 class="content-title">5. Email Configurations</h3>
+                    <h3 class="content-title" id="emailconfig">5. Email Configurations</h3>
                     <h3>Send Email configurations so that system can send emails to registered users.</h3>
                     <img src="images/admin/11.png" alt="e-School">
-
                     <br><br>
-
-                    <h3 class="content-title">6. Fee payment Configurations</h3>
-                    <h3>Set razorpay and stripe credentials. At a time only one payment gateway will be enable</h3>
+                    <h3>After Adding Email configurations you need to verify your email address. So that you can easily
+                        register students.</h3>
                     <img src="images/admin/12.png" alt="e-School">
                     <br><br>
-                    <h3 class="content-title">7. Payment Gateway's Webhook Configration</h3>
-                    <img src="images/admin/13.jpg" alt="e-School">
-                    <h4 class="content-title">1. Webhook Configration for Razorpay</h4>
+
+                    <h3 class="content-title" id="feepayment">6. Fee payment Configurations</h3>
+                    <h3>Set razorpay, stripe and paystack credentials. At a time only one payment gateway will be enable
+                    </h3>
+                    <img src="images/admin/13.png" alt="e-School">
+                    <br><br><br>
+                    <h3 class="content-title" id="webhookconfig">7. Payment Gateway's Webhook Configration</h3>
                     <img src="images/admin/14.jpg" alt="e-School">
+                    <h4 class="content-title">1. Webhook Configration for Razorpay</h4>
                     <img src="images/admin/15.jpg" alt="e-School">
                     <img src="images/admin/16.jpg" alt="e-School">
-                    <h4 class="content-title">2. Webhook Configration for Stripe</h4>
                     <img src="images/admin/17.jpg" alt="e-School">
+                    <h4 class="content-title">2. Webhook Configration for Stripe</h4>
                     <img src="images/admin/18.jpg" alt="e-School">
                     <img src="images/admin/19.jpg" alt="e-School">
                     <img src="images/admin/20.jpg" alt="e-School">
+                    <h4 class="content-title">3. Webhook Configration for Paystack</h4>
+                    <br><br><br><br>
+                    <img src="images/admin/22.png" alt="e-School">
+                    <br><br><br><br>
+                    <img src="images/admin/23.png" alt="e-School">
                 </div>
             </section>
 
