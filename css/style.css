@@ -562,3 +562,8 @@ p {
     height: 100%;
 
 }
+
+.responsive-video {
+    width: 100%;
+    border: 3px solid black;
+}
