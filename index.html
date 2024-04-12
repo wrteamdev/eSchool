@@ -51,15 +51,15 @@
                                 <li><a href='#Installation-steps'>Installation Steps</a></li>
                             </ul>
                         </li>
-                        <li class="sub-menu"><a>Addtional Panel Configuration<i class='fa fa-caret-down right'></i></a>
+                        <li class="sub-menu"><a>Additional Panel Configuration<i class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#sessionyear'>Session Year</a></li>
                                 <li><a href='#appsettings'>App Settings</a></li>
                                 <li><a href='#generalsettings'>General Settings</a></li>
-                                <li><a href='#fcmserverkey'>FCM Server Key</a></li>
+                                <li><a href='#fcmserverkey'>Notification Settings</a></li>
                                 <li><a href='#emailconfig'>Email Configurations</a></li>
                                 <li><a href='#feepayment'>Fee payment Configurations</a></li>
-                                <li><a href='#webhookconfig'>Payment Gateway Webhook Configration</a></li>
+                                <li><a href='#webhookconfig'>Payment Gateway Webhook Configuration</a></li>
                             </ul>
                         </li>
                         <li class='sub-menu'><a>Setup Mobile Application<i class='fa fa-caret-down right'></i></a>
@@ -156,7 +156,7 @@
                 <div class="sec-content">
                     <h3 class="content-title">Prerequisite</h3>
                     <h3>
-                        Eschool Admin panel is built using <strong>Laravel Framework 9.14.1</strong> so you need
+                        eSchool Admin panel is built using <strong>Laravel Framework 9.14.1</strong> so you need
                         <strong>PHP version upto 8.1.0</strong> version installed on your server.
                     </h3>
 
@@ -230,14 +230,14 @@
             <section class="section css-structure">
                 <div class="sec-title">
                     <span class="icon fa fa-at"></span>
-                    <h2>Addtional Configurations (Admin Panel)</h2>
+                    <h2>Additional Configurations (Admin Panel)</h2>
                 </div>
                 <br />
                 <div class="sec-content">
                     <h3>After Installation you need to setup some settings before using the system.</h3>
 
                     <h3 class="content-title" id="sessionyear">1. Session Year</h3>
-                    <h3>Set your Current & upcoming session years here, So you can manage studens by session year</h3>
+                    <h3>Set your Current & upcoming session years here, So you can manage student by session year</h3>
                     <img src="images/admin/7.png" alt="e-School">
 
                     <br><br>
@@ -254,41 +254,58 @@
 
                     <br><br>
 
-                    <h3 class="content-title" id="fcmserverkey">4. FCM Server Key</h3>
-                    <h3>FCM Server key will be used for APP notifications.</h3>
+                    <h3 class="content-title" id="fcmserverkey">4. Notification Settings</h3>
+                    <h3>Now, Sender Id will be used for sending App Notification.</h3><br>
                     <img src="images/admin/10.png" alt="e-School">
-
                     <br><br>
 
-                    <h3 class="content-title" id="emailconfig">5. Email Configurations</h3>
-                    <h3>Send Email configurations so that system can send emails to registered users.</h3>
-                    <img src="images/admin/11.png" alt="e-School">
-                    <br><br>
-                    <h3>After Adding Email configurations you need to verify your email address. So that you can easily
-                        register students.</h3>
-                    <img src="images/admin/12.png" alt="e-School">
-                    <br><br>
+                    <h2><strong>Sender Id</strong></h2><br>
+                    <h3>1. In the Firebase console, go to Project Settings.</h3>
+                    <h3>2. From Cloud Messaging tab check the Firebase Cloud Messaging API (V1) where Sender Id is
+                        given, add that to Admin Panel in System Settings > Notification Setting.</p>
+                        <h2><strong>Firebase Project Id</strong></h2><br>
+                        <h3>1. In the Firebase console, go to Project Settings</h3>
+                        <h3>2. Go to > General where Project Id is given add that to Admin Panel in System Settings >
+                            Notification Setting.</p>
+                            <h2><strong>Service Json File</strong></h2><br>
+                            <h3>1. In the Firebase console, open Settings > Service Accounts.</h3>
+                            <h3>2. Click Generate New Private Key, then confirm by clicking Generate Key.</h3>
+                            <h3>3. Securely store the JSON file containing the key and upload in Admin Panel in System
+                                Settings > Notification Setting.</h3>
 
-                    <h3 class="content-title" id="feepayment">6. Fee payment Configurations</h3>
-                    <h3>Set razorpay, stripe and paystack credentials. At a time only one payment gateway will be enable
-                    </h3>
-                    <img src="images/admin/13.png" alt="e-School">
-                    <br><br><br>
-                    <h3 class="content-title" id="webhookconfig">7. Payment Gateway's Webhook Configration</h3>
-                    <img src="images/admin/14.jpg" alt="e-School">
-                    <h4 class="content-title">1. Webhook Configration for Razorpay</h4>
-                    <img src="images/admin/15.jpg" alt="e-School">
-                    <img src="images/admin/16.jpg" alt="e-School">
-                    <img src="images/admin/17.jpg" alt="e-School">
-                    <h4 class="content-title">2. Webhook Configration for Stripe</h4>
-                    <img src="images/admin/18.jpg" alt="e-School">
-                    <img src="images/admin/19.jpg" alt="e-School">
-                    <img src="images/admin/20.jpg" alt="e-School">
-                    <h4 class="content-title">3. Webhook Configration for Paystack</h4>
-                    <br><br><br><br>
-                    <img src="images/admin/22.png" alt="e-School">
-                    <br><br><br><br>
-                    <img src="images/admin/23.png" alt="e-School">
+                            <br>
+
+                            <h3 class="content-title" id="emailconfig">5. Email Configurations</h3>
+                            <h3>Send Email configurations so that system can send emails to registered users.</h3>
+                            <img src="images/admin/11.png" alt="e-School">
+                            <br><br>
+                            <h3>After Adding Email configurations you need to verify your email address. So that you can
+                                easily
+                                register students.</h3>
+                            <img src="images/admin/12.png" alt="e-School">
+                            <br><br>
+
+                            <h3 class="content-title" id="feepayment">6. Fee payment Configurations</h3>
+                            <h3>Set Razorpay, stripe and Paystack credentials. At a time only one payment gateway will
+                                be enable
+                            </h3>
+                            <img src="images/admin/13.png" alt="e-School">
+                            <br><br><br>
+                            <h3 class="content-title" id="webhookconfig">7. Payment Gateway's Webhook Configuration</h3>
+                            <img src="images/admin/14.jpg" alt="e-School">
+                            <h4 class="content-title">1. Webhook Configuration for Razorpay</h4>
+                            <img src="images/admin/15.jpg" alt="e-School">
+                            <img src="images/admin/16.jpg" alt="e-School">
+                            <img src="images/admin/17.jpg" alt="e-School">
+                            <h4 class="content-title">2. Webhook Configuration for Stripe</h4>
+                            <img src="images/admin/18.jpg" alt="e-School">
+                            <img src="images/admin/19.jpg" alt="e-School">
+                            <img src="images/admin/20.jpg" alt="e-School">
+                            <h4 class="content-title">3. Webhook Configuration for Paystack</h4>
+                            <br><br><br><br>
+                            <img src="images/admin/22.png" alt="e-School">
+                            <br><br><br><br>
+                            <img src="images/admin/23.png" alt="e-School">
                 </div>
             </section>
 
@@ -398,7 +415,7 @@
                         </li>
                         <li>
                             <h4>
-                                Add andorid application to your firebase project
+                                Add android application to your firebase project
                             </h4>
                             <br><br>
                             <img src="images/app/addAndroid.jpg" alt="e-School" />
@@ -434,7 +451,7 @@
 
                         <li>
                             <h4>
-                                Please configre this settings in-order to send ios notifications.
+                                Please configure this settings in-order to send ios notifications.
                                 <br>
                             </h4>
                             <a href="https://firebase.flutter.dev/docs/messaging/apple-integration"
@@ -489,7 +506,7 @@
                     <br><br>
 
                     <h4> For IOS open ios > Runner > Assets.xcassets > AppIcon.appiconset here and add your logo
-                        according to diffrent size.</h4>
+                        according to different size.</h4>
                     <br><br>
                     <img src="images/app/iosAppIcon.png" alt="e-School" />
 
@@ -520,7 +537,7 @@
                 <div class="sec-content">
 
                     <h4> For Android, go to android/app/src/main/AndroidManifest.xml and change the app name as shown in
-                        image. Replace the selected eschool text with your school name</h4>
+                        image. Replace the selected eSchool text with your school name</h4>
                     <br><br>
                     <img src="images/app/androidAppName.png" alt="e-School" />
 
@@ -608,7 +625,7 @@
                 <div class="sec-content">
                     <ol>
                         <li>
-                            <h4>By default,default applicaiton language is english. If you want to change default
+                            <h4>By default,default application language is english. If you want to change default
                                 language
                                 go to lib/utils/appLanguages.dart and add your respective language's code shown in below
                                 image.
@@ -707,7 +724,7 @@
                 </div>
                 <br>
                 <div class="sec-content">
-                    <h2>Create and add Key Store file for Androd:</h2>
+                    <h2>Create and add Key Store file for Android:</h2>
                     <br><br>
                     <ol>
                         <li>
@@ -755,7 +772,7 @@
                 </div>
                 <br><br>
                 <div class="sec-content">
-                    <h2>Follow these links for more information on generateing the release version:</h2>
+                    <h2>Follow these links for more information on generating the release version:</h2>
                     <br><br>
                     <ol>
                         <li>
@@ -824,7 +841,7 @@
                         have. For example, selecting English as the medium and A, B, C as the sections will
                         automatically create classes like 10 A English, 10 B English, and 10 C English. Similarly,
                         selecting Gujarati as the medium and A, B, C as the sections will create classes like 10 A
-                        Gujarati, 10 B Gujarati, and 10 C Gujarati. Optionally a shift can be choosen for any class to
+                        Gujarati, 10 B Gujarati, and 10 C Gujarati. Optionally a shift can be chosen for any class to
                         indicate the time-zone it'll be taken on. There is also an option of sub-dividing classes into
                         streams based on student's subject preference.
                     </p>
@@ -842,7 +859,7 @@
                         crucial role in overseeing the overall academic progress and discipline of the students in a
                         particular class. One teacher can be class teacher of multiple classes. The class teacher can
                         use
-                        features like attendence to take attendence of students in their class and giving offline exam
+                        features like attendance to take attendance of students in their class and giving offline exam
                         Marks
                         to the students in their class who has given the offline exam.
                     </p>
@@ -884,7 +901,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tkEckJue_dw"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=tkEckJue_dw">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=tkEckJue_dw">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div>
@@ -938,7 +955,7 @@
                     <h3>Reset Password</h3>
                     <p>
                         The Reset Password feature enables administrators to reset a student's login password for the
-                        e-School application. It resets choosen student's password to the default password which is the
+                        e-School application. It resets chosen student's password to the default password which is the
                         student's date of birth in format ddmmyyyy.
                     </p>
                     <br>
@@ -972,7 +989,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/CwTldqBQW9M"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=CwTldqBQW9M">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=CwTldqBQW9M">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div>
@@ -1028,7 +1045,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/4j94z_N2C_E"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=4j94z_N2C_E">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=4j94z_N2C_E">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div>
@@ -1069,7 +1086,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/nkp2hTLUF4E"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=nkp2hTLUF4E">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=nkp2hTLUF4E">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div><br>
@@ -1105,7 +1122,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/fLhpseE32xY"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=fLhpseE32xY">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=fLhpseE32xY">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div><br>
@@ -1146,7 +1163,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/38RUcrpt6u4"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=38RUcrpt6u4">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=38RUcrpt6u4">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div><br>
@@ -1197,7 +1214,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/4UhdTIAUG7Y"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=4UhdTIAUG7Y">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=4UhdTIAUG7Y">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div><br>
@@ -1226,8 +1243,8 @@
 
                     <br>
                     <h3>eSchool & eSchool Teacher application</h3>
-                    <p>Teachers can also take/view attendence from the teacher application. Students and their parents
-                        can view their attendence monthly report from the eSchool application.</p>
+                    <p>Teachers can also take/view attendance from the teacher application. Students and their parents
+                        can view their attendance monthly report from the eSchool application.</p>
                 </div>
             </section>
             <section class="section css-structure" id="feature-lessons-and-topics">
@@ -1241,7 +1258,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/4V0GDA_O6wg"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=4V0GDA_O6wg">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=4V0GDA_O6wg">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div><br>
@@ -1279,7 +1296,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/1RGEpoNgJu0"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=1RGEpoNgJu0">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=1RGEpoNgJu0">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div><br>
@@ -1320,7 +1337,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ibL_B5drcCI"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=ibL_B5drcCI">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=ibL_B5drcCI">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div><br>
@@ -1406,7 +1423,7 @@
                     <div class="container-iframe">
                         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/w7RAV3Al_Bc"
                             frameborder="0" allowfullscreen>Your
-                            browser doesn't support iframes. <a href="https://www.youtube.com/watch?v=w7RAV3Al_Bc">Click
+                            browser doesn't support iframe. <a href="https://www.youtube.com/watch?v=w7RAV3Al_Bc">Click
                                 Here To
                                 View The Video on YouTube</a></iframe>
                     </div><br>
@@ -1553,13 +1570,14 @@
                         <h2>Content Settings</h2>
                         <br>
                         <br>
-                        <video src="images/web/1.webm" class="responsive-video" controls></video>
+                        <image src="images/web/1.png" class="responsive-video" controls></image>
                         <br>
                         <br>
                         <p>
                             In Web Settings the Content Settings section, admins can refine webpage content with
                             precision. They can add sections, headings, descriptive text, and images seamlessly. This
                             feature enables the creation of engaging webpages for enhanced user experience.
+                            Now, Admin can disable the section of web page.
                         </p>
                         <p style="color: #2b70fa;">Note: <br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Content should be maximum with 500 character.<br>
@@ -1649,17 +1667,28 @@
                         <br>
                         <h2>News & Events</h2>
                         <br>
+                        <h2><strong>Single Events</strong></h2>
                         <br>
                         <image src="images/web/8.png" class="responsive-video" alt="e-School" />
                         <br>
                         <br>
+                        <h2><strong>Multiple Events</strong></h2>
+                        <br>
+                        <image src="images/web/9.png" class="responsive-video" alt="e-School" />
+                        <br>
+                        <br>
+                        <h2><strong>Events List</strong></h2>
+                        <br>
+                        <image src="images/web/10.png" class="responsive-video" alt="e-School" />
+                        <br>
+                        <br>
                         <p>
-                            In the events section of the Admin panel, admin can easily add and manage upcoming
-                            events. These events, including holidays and other noteworthy occasions, are
-                            displayed on the webpage in a date-wise format. The news and events section
-                            showcases events starting from today's date, with a maximum limit of 6 entries. This
-                            streamlined approach ensures that users stay informed about upcoming events without
-                            overwhelming them with excessive information.
+                            In the events section of the Admin panel, administrators can efficiently add and manage both
+                            single-day and multi-day upcoming events. These events, encompassing holidays and other
+                            notable occasions, are presented on the webpage in a date-wise format. The news and events
+                            section exhibits events starting from today's date, with a maximum limit of 6 entries. This
+                            streamlined approach guarantees that users remain informed about upcoming events without
+                            inundating them with excessive information.
                         </p>
 
                     </div>
@@ -1706,17 +1735,17 @@
                     <div style="padding-left: 18px;">
                         <h4>
                             Default password of student is student's date of birth i.e. ddmmyyyy. <br>
-                            <span style="font-size: 1.5rem;"> Note :- student's credentails will be sent to their
+                            <span style="font-size: 1.5rem;"> Note :- student's credentials will be sent to their
                                 respective parent's email.</span>
                         </h4><br>
                         <h4>
                             Default password of parent is parent's date of birth i.e. ddmmyyyy. <br>
-                            <span style="font-size: 1.5rem;"> Note :- parent's credentails will be sent to their
+                            <span style="font-size: 1.5rem;"> Note :- parent's credentials will be sent to their
                                 respective email.</span>
                         </h4><br>
                         <h4>
                             Default password of teacher is teacher's date of birth i.e. ddmmyyyy. <br>
-                            <span style="font-size: 1.5rem;"> Note :- teacher's credentails will be sent to their
+                            <span style="font-size: 1.5rem;"> Note :- teacher's credentials will be sent to their
                                 respective email.</span>
                         </h4><br>
                     </div>
@@ -1727,7 +1756,7 @@
                             All the calendars in the application will show months in the current session year which can
                             be set from admin panel System Settings -> General Settings -> Session Year. If the current
                             date is not in the session year, the calendars will only show the current month with today
-                            highlited and not any events. To fix the issue you can choose the correct session year or
+                            highted and not any events. To fix the issue you can choose the correct session year or
                             create one from admin panel Session Year screen.<br>
                         </h4><br>
                     </div>
