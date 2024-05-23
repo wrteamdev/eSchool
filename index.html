@@ -97,11 +97,12 @@
                                 <li><a href='#feature-fees-payment'>Fees Payment</a></li>
                                 <li><a href='#feature-custom-notification'>Custom Notifications</a></li>
                                 <li><a href='#feature-chat'>Chat</a></li>
+                                <li><a href='#feature-document-generation'>Academic Document Generation</a></li>
                             </ul>
                         </li>
                         <li><a href="#webpage">Setup Web Page<i class='fa fa-caret-down right'></i></a>
                         </li>
-
+                     
                         <li>
                             <a href="#support">Support <span class="fa fa-arrow-right"></span></a>
                         </li>
@@ -885,7 +886,15 @@
                         another at the end of the academic year. This simplifies the administrative process and ensures
                         that students progress to the appropriate next level in their education.
                     </p>
-
+                    <br>
+                    <h3>Admission Form Dynamic Fields<div class="new-button">NEW</div>
+                    </h3>
+                    <p>
+                        The Dynamic Admission Form Field is a feature that simplifies students, parents and teachers enrollment. School
+                        Admin can add their own form fields in students and parents admission forms and teacher form with various types like
+                        textboxes, radio buttons, checkboxes, textareas, and file uploaders to suit the specific needs
+                        of the schools, and making the admission process efficient and adaptable to changing needs.
+                    </p>
                     <br />
                 </div>
             </section>
@@ -965,15 +974,6 @@
                         uploading a CSV file in a specific format. Administrators can download a dummy file with the
                         required format using the "Download Dummy File" button. This functionality streamlines the
                         process of importing student data into the e-School system.
-                    </p>
-                    <br>
-                    <h3>Student Dynamic Admission Form Fields<div class="new-button">NEW</div>
-                    </h3>
-                    <p>
-                        The Student Dynamic Admission Form Field is a feature that simplifies student enrollment. School
-                        administrators can add their own form fields in admission forms with various types like
-                        textboxes, radio buttons, checkboxes, textareas, and file uploaders to suit the specific needs
-                        of the schools, and making the admission process efficient and adaptable to changing needs.
                     </p>
                 </div>
             </section>
@@ -1555,14 +1555,72 @@
                 </div>
             </section>
 
+            <section class="section css-structure" id="feature-document-generation">
+                <div class="sec-title">
+                    <span class="icon fa fa-at"></span>
+                    <h2>Academic Document Generation<div class="new-button" style="background-color: #fff;color: #2b70fa; font-size: 16;">
+                        NEW
+                    </div></h2>
+                </div>
+                <br>
+                <br>
+                <div class="sec-content">
+                    <h2>ID Cards Setting</h2>
+                   <br>
+                
+                   <image src="images/admin/25.png" class="responsive-video" controls></image>
+               
+                   <p>In the ID card settings, admins can customize how student ID cards look. They can change colors, add signatures, and even put background pictures. These options help make each ID card unique while still fitting the school's style.</p>
+                </div>
+                <div class="sec-content">
+                   <h2>ID Cards List</h2>
+                   <br>
+                  
+                   <image src="images/admin/26.png" class="responsive-video" controls></image>
+                </div>
+                <div class="sec-content">
+                   <image src="images/admin/27.png" class="responsive-video" controls></image>
+                   <br>
+                   <p>In the Student >> Generate ID card section, Admin and Teacher can select students by checking the checkbox next to their names. Once they've selected the desired students, they simply click "Generate" to create ID cards specifically for those chosen students. This streamlined process ensures that ID cards are efficiently produced only for the selected students, saving time and effort for admin.</p>  
+                </div>
+                <div class="sec-content">
+                    <h2>School Bonafide Certificate & Leaving Certificate</h2>
+                    <br>
+                    
+                    <image src="images/admin/28.png" class="responsive-video" controls></image>
+                    
+                    <p>In the Student Details section, Admin can swiftly produce bonafide and leaving certificates. These documents verify a student's enrollment status or departure from the institution, essential for tasks like visa applications or academic transfers. </p>
+                    
+                    <br>
+                    
+                    <image src="images/admin/29.png" class="responsive-video" controls></image>
+                    
+                    <p>Here, Admin can add additional details like reason and validity when generating bonafide certificates. This ensures accurate documentation for various purposes, such as scholarship applications or official requirements.</p>
+                    <br>
+                    
+                    <image src="images/admin/30.png" class="responsive-video" controls></image>
+                    
+                    <p>Admin can generate student's leaving certificate, include specific details such as the reason for leaving, the class to which the student is promoted, their general conduct, and any additional remarks. These details provide a comprehensive overview of the student's tenure at the institution, facilitating smooth transitions to new academic endeavors or other pursuits.</p>
+                </div>
+                <div class="sec-content">
+                    <h2>Student's Result</h2>
+                    <br>
+                  
+                    <image src="images/admin/31.png" class="responsive-video" controls></image>
+                    
+                    <p>In the "Generate Result" section, Admin and Teachers can access student results by selecting a class and clicking "search". They can then view individual student results with an interactive interface, downloading them as needed. Only published exam results are shown, ensuring privacy and accuracy.</p>  
+                    <p style="color: #2b70fa;">Note: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- File Location to change content of Bonafide Certificate - resources/views/students/bonafide_template.blade.php <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  File Location to change content of Leaving Certificate - resources/views/students/leaving_template.blade.php <br>
+                       
+                    </p>
+                </div>
+            </section>
             <!-- Web Page Setup-->
             <section class="section css-structure" id="webpage">
                 <div class="sec-title">
                     <span class="icon fa fa-at"></span>
-                    <h2>Web Page<div class="new-button" style="background-color: #fff;color: #2b70fa; font-size: 16;">
-                            NEW
-                        </div>
-                    </h2>
+                    <h2>Web Page</h2>
                 </div>
                 <div class="sec-content">
                     <div class="content-title">
