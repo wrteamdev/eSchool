@@ -39,9 +39,9 @@
  ***/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Roboto';
     font-size: 14px;
-    color: #353535;
+    color: #3E4B5E;
     line-height: 1.6em;
     font-weight: 500;
     background: #ffffff;
@@ -125,7 +125,7 @@ p {
     width: 100%;
     height: 100%;
     overflow: auto;
-    padding: 0px 0px 30px;
+    padding: 0px 0px 50px;
     background: #ffffff;
     transition: all 1000ms ease;
     -moz-transition: all 1000ms ease;
@@ -139,15 +139,16 @@ p {
 #sidebar .menu-box .logo {
     position: relative;
     text-align: center;
-    margin-bottom: 35px;
-    padding: 30px 20px 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
 }
 
 #sidebar .menu-box .logo img {
     position: relative;
     display: inline-block;
     max-width: 100%;
-    height: 40px;
+    height: 60px;
+    width: 300px;
     object-fit: contain;
 }
 
@@ -177,7 +178,7 @@ p {
     position: relative;
     display: block;
     padding: 15px 0px 15px 30px;
-    color: #000000;
+    color: #3E4B5E;
     font-size: 15px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -219,8 +220,11 @@ p {
 #sidebar .menu-box .sticky-menu>ul>li>a:hover,
 #sidebar .menu-box .sticky-menu>ul>li.current>a,
 #sidebar .menu-box .sticky-menu>ul>li.current-menu-item>a {
-    color: #fff;
-    background: #22577a;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #22577a;
+    color: #22577a;
+    font-weight: 600;
 }
 
 #sidebar .copyright {
@@ -255,19 +259,21 @@ p {
     width: 100%;
     z-index: 5;
     background-color: #f2edf3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #content-section .section {
     position: relative;
     min-height: 200px;
-    margin-bottom: 50px;
-    padding: 0 60px;
 }
 
 #content-section .sec-title {
     position: relative;
     padding: 19px 20px 19px 30px;
-    background: #22577a;
+    background-image:linear-gradient(to right,#143449,#22577A,#143449);
     border-radius: 5px;
     color: #fff;
 }
@@ -317,7 +323,7 @@ p {
 
 #content-section .sec-content {
     position: relative;
-    padding: 10px 50px;
+    padding: 30px 50px;
 }
 
 .introduction .sec-content h2 {
@@ -387,7 +393,7 @@ p {
 .sec-content h3.content-title {
     font-size: 25px;
     font-family: 'Poppins';
-    color: #242424;
+    color: #242424d8;
 }
 
 .sec-content .checkbox,
@@ -565,3 +571,78 @@ p {
     width: 100%;
     border: 3px solid black;
 }
+
+.center{
+    text-align: center;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 95%;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    background-color: #36617e;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-body {
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .card-body p {
+    margin: 0;
+  }
+  
+  .card-footer {
+    padding: 15px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .card-footer a {
+    color: #36617e;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background-color: #ffffff; /* Footer background color */
+    color: #000000;/* Footer text color */
+    padding: 20px;
+    text-align: right; /* Align text to the right */
+    font-size: 1.4rem;
+    position: relative; /* Optional, for positioning elements */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: #143449;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>e-School | Home</title>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/jquery.highlight.css" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/scrollbar.css" rel="stylesheet" />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+        <!--Sidebar-->
+        <aside id="sidebar">
+            <!--Toggle Button-->
+            <div class="button-container clearfix">
+                <div class="menu-toggle flaticon-menu10"></div>
+            </div>
+
+            <!--Menu Box-->
+            <div class="menu-box">
+                <!--Logo-->
+                <br />
+                <div class="logo text-right">
+                    <a href="#"><img src="images/eSchool_logo_web.svg" width="119" alt="" /></a>
+                </div>
+
+                <!--Sticky Menu-->
+                <nav class="sticky-menu animated bounceInDown">
+                    <ul>
+                        <!-- normal list -->
+                        <li class="current">
+                            <a href="#introduction">Introduction <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li><a href='#prerequisite'>Prerequisite</a></li>
+                        <li><a href='#Installation-steps'>Installation Steps</a></li>
+                        <li><a href='#sessionyear'>Session Year</a></li>
+                        <li><a href='#appsettings'>App Settings</a></li>
+                        <li><a href='#generalsettings'>General Settings</a></li>
+                        <li><a href='#fcmserverkey'>Notification Settings</a></li>
+                        <li><a href='#emailconfig'>Email Configurations</a></li>
+                        <li><a href='#feepayment'>Fee payment Configurations</a></li>
+                        <li><a href='#webhookconfig'>Payment Gateway Webhook Configuration</a></li>
+                        <li><a href='#chat-settings'>Chat Settings</a></li>
+                        </li>
+
+                        <li>
+                            <a href="#support">Support <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#faqs">FAQs <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#rating">Rating <span class="fa fa-arrow-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="#contactUs">Contact Us <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="copyright">Copyright &copy;<a href="mailto:support@wrteam.in">WRTeam</a> 2024</div>
+        </aside>
+
+        <div id="content-section">
+
+            <!--Introduction Section-->
+            <div class="card">
+                <section class="section introduction" id="introduction">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>eSchool Admin Panel Documentation</h2>
+                    </div>
+                    <div class="sec-content" style="text-align: center;">
+                        <p style="text-align: left;">
+                            <strong>By :</strong> WRTeam<br />
+                            <strong>Email :</strong>
+                            <a href="mailto:purnima.wrteam@gmail.com">purnima.wrteam@gmail.com</a> <br />
+                        </p>
+                        <br />
+                        <p style="text-align: left;">
+                            Thank you for purchasing <strong>e-School</strong>.
+                            We appreciate your support. In this documentation, you will find instructions on how to set
+                            up
+                            the admin panel and mobile application for e-School.
+                            This document also provides features of e-School.
+                            If you have any questions, feel free to reach out. Thank you for choosing e-School!
+                        </p>
+                        <br />
+                    </div>
+                </section>
+            </div>
+
+            <!-- Prerequisite -->
+            <div class="card">
+                <section class="section html-structure" id="prerequisite">
+                    <div class="sec-title">
+                        <span class="icon fa fa-th-large"></span>
+                        <h2>Setup Admin Panel</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <h3 class="content-title">Prerequisite</h3>
+                        <h3>
+                            eSchool Admin panel is built using <strong>Laravel Framework 9.14.1</strong> so you need
+                            <strong>PHP version upto 8.1.0</strong> version installed on your server.
+                        </h3>
+
+                        <h3 class="content-title">Upload Admin Panel code on server</h3>
+                        <p>1. Unzip the code you will see the <strong>Admin Panel</strong> inside the zip.</p>
+                        <p>2. Upload this folder content on your server in <strong>public_html</strong> folder.</p>
+                        <p>3. After uploading visit your domain url. You will see the installation wizard.Follow the
+                            instructions.</p>
+                        <br />
+                        <br />
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- Installation Steps -->
+            <div class="card">
+                <section class="section css-structure" id="Installation-steps">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Installation Steps</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <h3 class="content-title">1. Installation Screen</h3>
+                        <img src="images/admin/1.png" alt="e-School">
+
+                        <br><br>
+
+                        <h3 class="content-title">2. Server Requirements & Extensions</h3>
+                        <h3>If PHP version is lower than 8.0 or any extension is not installed then it will be
+                            highlighted
+                            using Red color. So you need to make sure that your server meets the all requirement.</h3>
+                        <img src="images/admin/2.png" alt="e-School">
+
+                        <br><br>
+
+                        <h3 class="content-title">3. Permission Screen</h3>
+                        <h3>Make sure this folder have read & write permissions. If not then assign this folders read &
+                            write permissions.</h3>
+                        <img src="images/admin/3.png" alt="e-School">
+
+                        <br><br>
+
+                        <h3 class="content-title">4. Purchase Code Validation</h3>
+                        <h3>Here you'll have to insert the purchase code obtained from CodeCanyon to authenticate your
+                            purchase and
+                            authorize your server to access the services.</h3>
+
+                        <h3>To find your Purchase code you can visit this link: <a
+                                href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
+                                target=" _blank">Where
+                                is My Purchase code?</a></h3>
+
+                        <img src="images/admin/24.png" alt="e-School">
+
+                        <br><br>
+
+                        <h3 class="content-title">5. Database Configuration Screen</h3>
+                        <img src="images/admin/4.png" alt="e-School">
+
+                        <br><br>
+
+                        <h3 class="content-title">6. Database Connection Status</h3>
+                        <img src="images/admin/5.png" alt="e-School">
+
+                        <br><br>
+
+                        <h3 class="content-title">7. Final installation Screen</h3>
+                        <h3>If everything is configured successfully then your Admin panel has been installed
+                            successfully.You can login as Super Admin using the credentials provided here.</h3>
+                        <img src="images/admin/6.png" alt="e-School">
+                    </div>
+                </section>
+            </div>
+
+            <!-- Session Year -->
+            <div class="card">
+                <section class="section css-structure" id="sessionyear">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Session Year</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <h3>Set your Current & upcoming session years here, So you can manage student by session year
+                        </h3>
+                        <img src="images/admin/7.png" alt="e-School">
+                    </div>
+                </section>
+            </div>
+
+            <!-- App Settings -->
+            <div class="card">
+                <section class="section css-structure" id="appsettings">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>App Settings</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <h3>This settings will be used by your Flutter APP.</h3>
+                        <img src="images/admin/8.png" alt="e-School">
+                    </div>
+                </section>
+            </div>
+
+            <!-- General Settings -->
+            <div class="card">
+                <section class="section css-structure" id="generalsettings">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>General Settings</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <h3>This settings will be used by Admin Panel.You can set your current session year here.</h3>
+                        <img src="images/admin/9.png" alt="e-School">
+
+                        <br><br>
+                    </div>
+
+                </section>
+            </div>
+
+            <!-- Notification Settings -->
+            <div class="card">
+                <section class="section css-structure" id="fcmserverkey">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Notification Settings</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <h3>Now, Sender Id will be used for sending App Notification.</h3><br>
+                        <img src="images/admin/10.png" alt="e-School">
+                        <br><br>
+
+                        <h2><strong>Sender Id</strong></h2><br>
+
+                        <img src="images/admin/firebase_sender_id.png" alt="e-School">
+                        <br>
+                        <br>
+
+                        <h3>1. In the Firebase console, go to Project Settings.</h3>
+                        <h3>2. From Cloud Messaging tab check the Firebase Cloud Messaging API (V1) where Sender Id is
+                            given, add that to Admin Panel in System Settings > Notification Setting.</h3>
+
+
+                        <h2><strong>Firebase Project Id</strong></h2><br>
+
+                        <img src="images/admin/firebase_project_id.png" alt="e-School">
+                        <br>
+                        <br>
+
+                        <h3>1. In the Firebase console, go to Project Settings</h3>
+                        <h3>2. Go to > General where Project Id is given add that to Admin Panel in System Settings >
+                            Notification Setting.</h3>
+
+                        <h2><strong>Service Json File</strong></h2><br>
+
+                        <img src="images/admin/firebase_service_file.png" alt="e-School">
+                        <br>
+                        <br>
+
+                        <h3>1. In the Firebase console, open Settings > Service Accounts.</h3>
+                        <h3>2. Click Generate New Private Key, then confirm by clicking Generate Key.</h3>
+                        <h3>3. Securely store the JSON file containing the key and upload in Admin Panel in System
+                            Settings > Notification Setting.</h3>
+
+                        <br>
+                    </div>
+
+                </section>
+            </div>
+
+            <!-- Email Configurations -->
+            <div class="card">
+                <section class="section css-structure" id="emailconfig">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Email Configurations</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <h3>Send Email configurations so that system can send emails to registered users.</h3>
+                        <img src="images/admin/11.png" alt="e-School">
+                        <br><br>
+                        <h3>After Adding Email configurations you need to verify your email address. So that you can
+                            easily
+                            register students.</h3>
+                        <img src="images/admin/12.png" alt="e-School">
+                        <br><br>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Fees Configurations -->
+            <div class="card">
+                <section class="section css-structure" id="feepayment">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Fee payment Configurations</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <h3>Set Razorpay, stripe and Paystack credentials. At a time only one payment gateway will
+                            be enable
+                        </h3>
+                        <img src="images/admin/13.png" alt="e-School">
+                        <br><br><br>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Webhook Setup -->
+            <div class="card">
+                <section class="section css-structure" id="webhookconfig">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Payment Gateway's Webhook Configuration</h2>
+                    </div>
+                    <br />
+                    <div class="sec-content">
+                        <img src="images/admin/14.jpg" alt="e-School">
+                        <h4 class="content-title">1. Webhook Configuration for Razorpay</h4>
+                        <img src="images/admin/15.jpg" alt="e-School">
+                        <img src="images/admin/16.jpg" alt="e-School">
+                        <img src="images/admin/17.jpg" alt="e-School">
+                        <h4 class="content-title">2. Webhook Configuration for Stripe</h4>
+                        <img src="images/admin/18.jpg" alt="e-School">
+                        <img src="images/admin/19.jpg" alt="e-School">
+                        <img src="images/admin/20.jpg" alt="e-School">
+                        <h4 class="content-title">3. Webhook Configuration for Paystack</h4>
+                        <br><br><br><br>
+                        <img src="images/admin/22.png" alt="e-School">
+                        <br><br><br><br>
+                        <img src="images/admin/23.png" alt="e-School">
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- Chat Settings -->
+            <div class="card">
+                <section class="section css-structure" id="chat-settings">
+                    <div class="sec-title">
+                        <span class="icon fa fa-at"></span>
+                        <h2>Chat Settings
+                        </h2>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="sec-content">
+                        <h2>Chat Settings</h2>
+                        <br>
+
+                        <image src="images/admin/chatsetting.png" class="responsive-video" controls></image>
+                        <br>
+
+                        <p>Admin settings for chat messages provide essential controls to enhance performance and user
+                            experience. By setting the maximum upload file limits, admins can restrict the number of
+                            files a
+                            user can attach in a single message, which helps manage server load and prevents spam. The
+                            maximum file upload size setting allows admins to cap the size of each uploaded file,
+                            ensuring
+                            that large files do not consume excessive bandwidth or storage space. Additionally, the
+                            maximum
+                            text message character limits setting defines the maximum length of a text message,
+                            promoting
+                            readability and preventing overly lengthy messages that could disrupt the conversation flow.
+                            These settings are crucial for maintaining a balanced and efficient chat system.</p>
+                        <p>Admins can configure automatic message deletion by adding cron jobs on the server. This
+                            allows
+                            for scheduled removal of messages, helping manage storage space and maintain privacy. By
+                            setting
+                            specific intervals for deletion, admins can ensure that older messages are routinely purged,
+                            keeping the chat environment clean and efficient.</p>
+                        <p>Admins can delete messages by specifying a "from date" and "to date" and then clicking the
+                            delete
+                            button. This action removes all messages within the selected date range, allowing for
+                            efficient
+                            management of chat history and ensuring that outdated or irrelevant messages are cleared out
+                            systematically.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!--Support-->
+            <div class="card">
+                <section class="section support" id="support">
+                    <div class="sec-title">
+                        <span class="icon fa fa-support"></span>
+                        <h2>Support</h2>
+                    </div>
+
+                    <br />
+                    <div class="sec-content">
+                        <h4>Its our pleasure to serve and support our customers. Please contact our support team if you
+                            encounter any issues or have any questions related to e-School.</h4>
+                        <br>
+                        <h4>Customer Support Head for e-School : <a href="https://join.skype.com/invite/vdrcOZy99P4x"
+                                target="_blank" style="color:#3c55d1">Aayush Thacker</a></h4>
+                        <br>
+                        <h4>To help our customers, we constantly be in touch with every customer if they need any
+                            assistance
+                            regarding our product.
+                            <br> We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm IST (GMT
+                                +5.30) –
+                                We are a Team located in India – Asia.
+                                Typically we reply our customers for all the questions and queries within 24 hours of
+                                time
+                                via comments, support forum or emails.</strong>
+                        </h4>
+
+                    </div>
+                </section>
+            </div>
+
+            <!--FAQs-->
+            <div class="card">
+                <section class="section faqs" id="faqs">
+                    <div class="sec-title">
+                        <span class="icon fa fa-fqs"></span>
+                        <h2>FAQs</h2>
+                    </div>
+
+                    <br />
+                    <div class="sec-content">
+                        <h3>1. What is the default password ?</h3><br>
+                        <div style="padding-left: 18px;">
+                            <h4>
+                                Default password of student is student's date of birth i.e. ddmmyyyy. <br>
+                                <span style="font-size: 1.5rem;"> Note :- student's credentials will be sent to their
+                                    respective parent's email.</span>
+                            </h4><br>
+                            <h4>
+                                Default password of parent is parent's date of birth i.e. ddmmyyyy. <br>
+                                <span style="font-size: 1.5rem;"> Note :- parent's credentials will be sent to their
+                                    respective email.</span>
+                            </h4><br>
+                            <h4>
+                                Default password of teacher is teacher's date of birth i.e. ddmmyyyy. <br>
+                                <span style="font-size: 1.5rem;"> Note :- teacher's credentials will be sent to their
+                                    respective email.</span>
+                            </h4><br>
+                        </div>
+                        <br><br>
+                        <h3>2. Why is the application calendar not showing any events ?</h3><br>
+                        <div style="padding-left: 18px;">
+                            <h4>
+                                All the calendars in the application will show months in the current session year which
+                                can
+                                be set from admin panel System Settings -> General Settings -> Session Year. If the
+                                current
+                                date is not in the session year, the calendars will only show the current month with
+                                today
+                                highted and not any events. To fix the issue you can choose the correct session year or
+                                create one from admin panel Session Year screen.<br>
+                            </h4><br>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!--Rating-->
+            <div class="card">
+                <section class="section support" id="rating">
+                    <div class="sec-title">
+                        <span class="icon fa fa-support"></span>
+                        <h2>Rating</h2>
+                    </div>
+
+                    <br />
+                    <div class="sec-content">
+                        <h4>Your Feedback</h4>
+                        <br>
+                        <h4>
+                            Dear valuable customer,
+                            Thank you very much for choosing our product.
+                            It's our pleasure to serve top-notch service to you.
+                            Please give us your honest feedback that will help us to make a more strong and reliable
+                            product
+                            by click here <a href="https://codecanyon.net/downloads" style="color:#3c55d1"
+                                target="_blank">Rate
+                                Us</a>.
+                            Thank you very much.
+                        </h4>
+
+
+
+                    </div>
+                </section>
+            </div>
+
+
+            <!--Contact Us-->
+            <div class="card">
+                <section class="section support" id="contactUs">
+                    <div class="sec-title">
+                        <span class="icon fa fa-support"></span>
+                        <h2>Contact Us</h2>
+                    </div>
+
+                    <br />
+                    <div class="sec-content">
+                        <h4>WRTeam has creative and dedicated group of developers who are mastered in Apps Developments
+                            and
+                            Web Application Development with a niche in delivering quality solutions to customers across
+                            the
+                            globe.
+                            Contact us today to find out how we can help you or for freelance work.
+                            <br>
+                        </h4>
+                        <h4>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
+                            <br>
+                        </h4>
+                        <h4>Mail Us : <a href="mailto:support@wrteam.in" target="_blank">support@wrteam.in</a></h4>
+                        <br>
+                        <h4>Thank you very much.</h4>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <footer class="footer">Copyright &copy;<a href="mailto:support@wrteam.in">WRTeam</a> 2024</footer>
+    </div>
+    <!--End page wrapper-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/prism.js"></script>
+
+    <script src="js/jquery.highlight.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
